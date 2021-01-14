@@ -1,0 +1,37 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* 
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+} 
+
+/* .none {
+  display: none;
+} */
+
+.section-button-wrapper {
+  text-align: center;
+}
+
+.section-new {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.section-featured {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
