@@ -18,9 +18,9 @@ body {
   margin: 0 auto;
 } 
 
-/* .none {
+.none {
   display: none;
-} */
+}
 
 .section-button-wrapper {
   text-align: center;
@@ -34,4 +34,7 @@ body {
 .section-featured {
   padding-top: 70px;
   padding-bottom: 70px;
+}.section-blog {
+  padding-top: 70px;
+  padding-bottom: 45px;
 }
