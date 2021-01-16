@@ -10,13 +10,19 @@
   text-align: center;
 }
 .sction-header__description {
+  margin: 0 auto;
+  max-width: 630px;
   font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: center; 
   color: #999999;
   margin-bottom: 40px;
 }
-.sction-header__description  {
+.sction-header__description--uppercase {
+  text-transform: uppercase;
+}
+.sction-header__description--16px {
+  font-size: 16px;
+}
+.sction-header__description p {
   margin-top: 0;
 }

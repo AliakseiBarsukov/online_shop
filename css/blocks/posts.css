@@ -1,12 +1,15 @@
 .posts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  padding-bottom: 76px;
 }
 .post {
   max-width: 570px;
   display: flex;
   justify-content: space-between;
-}
-.post__img {
-
+  flex-grow: 1;
 }
 .post__content {
   display: flex;

@@ -18,10 +18,6 @@ body {
   margin: 0 auto;
 } 
 
-.none {
-  display: none;
-}
-
 .section-button-wrapper {
   text-align: center;
 }
@@ -34,7 +30,14 @@ body {
 .section-featured {
   padding-top: 70px;
   padding-bottom: 70px;
-}.section-blog {
+}
+
+.section-blog {
   padding-top: 70px;
   padding-bottom: 45px;
+}
+
+.section-subscribe {
+  padding-top: 45px;
+  padding-bottom: 100px;
 }
