@@ -1,6 +1,12 @@
 /* Navigation */
 .nav {
-  padding: 40px 0;
+  padding: 20px 0;
+}
+
+@media(min-width: 992px) {
+  a.nav{
+    padding: 40px 0;
+  }  
 }
 
 .nav__row {
@@ -8,8 +14,9 @@
   justify-content: flex-start;
   align-items: center;
 }
-.nav__logo, a.nav__logo {
-  margin-right: 83px;
+
+a.nav__logo {
+  margin-right: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -17,39 +24,123 @@
   color: #000000;
   text-decoration: none;  
 }
+
+@media(min-width: 992px) {
+  a.nav__logo {
+    margin-right: 83px;
+  }  
+}
+
 a.nav__logo:hover {
   color: #F72464;
 }
+
+.nav__list-holder {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(207, 72, 135, 0.363);
+  z-index: 9;
+  /* opacity: 0; */
+  transition: opacity 0.2s ease-in;
+}
+
+.nav__list-holder--visible {
+  display: block;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .nav__list-holder {
+    opacity: 1;
+    position: static;
+    background-color:transparent;
+  }
+}
+
 .nav__list {
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background-color: rgba(0, 0, 0);
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  color: #fff;
+  z-index: 9;
+  transform: translateX(-100%);
+  transition: transform 0.2 ease-in;
 }
+
+.nav__list-holder--visible .nav__list {
+  transform: translateX(0%);
+}
+
+@media (min-width: 992px) {
+  .nav__list {
+    position: static;
+    display: flex;
+    list-style-type: none;
+    color: #000;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+  }
+}
+
 .nav__item {
-  margin-right: 30px;
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid rgb(109, 106, 106);
 }
+
+@media (min-width: 992px) {
+  .nav__item {
+    margin-right: 30px;
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
 .nav__item:last-child {
   margin: 0;
 }
-.nav__link, a.nav__link {
-  font-size: 18px;
-  color: #000;
-  text-decoration: none;
 
+.nav__link, a.nav__link {
+  display: block;
+  font-size: 18px;
+  color: inherit;
+  text-decoration: none;
 }
+
 a.nav__link:hover {
   color: #F72464;
 }
+
 .nav__cart {
   margin-left: auto;
+  margin-right: 35px;
 }
+
+@media(min-width: 992px) {
+  .nav__cart {
+    margin-right: 0;
+    margin-left: auto;
+  }  
+}
+
 .nav__cart-link {
   position: relative;
   display: block;
   top: 5px;
   padding: 5px;
 }
+
 .nav__cart-number {
   position: absolute;
   top: -5px;
